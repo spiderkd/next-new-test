@@ -37,12 +37,10 @@ export default function SignupPage() {
 
       console.log("Signup success", response.data);
       router.push("/login");
-    } 
-    catch (error: any) {
+    } catch (error: any) {
       console.log("Signup failed", error.message);
       toast.error(error.message);
-    } 
-    finally {
+    } finally {
       setLoading(false);
     }
   };
